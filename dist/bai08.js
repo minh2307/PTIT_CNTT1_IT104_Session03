@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.divide = exports.multiply = exports.subtract = exports.total = void 0;
-const total = (num1, num2) => {
+export const total = (num1, num2) => {
     let a = Number(num1);
     let b = Number(num2);
     if (!isNaN(a) && !isNaN(b)) {
@@ -11,8 +8,7 @@ const total = (num1, num2) => {
         return `Không hợp lệ`;
     }
 };
-exports.total = total;
-const subtract = (num1, num2) => {
+export const subtract = (num1, num2) => {
     let a = Number(num1);
     let b = Number(num2);
     if (!isNaN(a) && !isNaN(b)) {
@@ -22,8 +18,7 @@ const subtract = (num1, num2) => {
         return `Không hợp lệ`;
     }
 };
-exports.subtract = subtract;
-const multiply = (num1, num2) => {
+export const multiply = (num1, num2) => {
     let a = Number(num1);
     let b = Number(num2);
     if (!isNaN(a) && !isNaN(b)) {
@@ -33,8 +28,7 @@ const multiply = (num1, num2) => {
         return `Không hợp lệ`;
     }
 };
-exports.multiply = multiply;
-const divide = (num1, num2) => {
+export const divide = (num1, num2) => {
     let a = Number(num1);
     let b = Number(num2);
     if (!isNaN(a) && !isNaN(b)) {
@@ -44,5 +38,4 @@ const divide = (num1, num2) => {
         return `Không hợp lệ`;
     }
 };
-exports.divide = divide;
-console.log((0, exports.total)(1, "2134"));
+console.log(total(1, "2134"));
